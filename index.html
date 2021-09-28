@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <!-- Mobile responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/42b5f47478.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -41,7 +45,76 @@
     </div>
   </header>
 
-  
+  <div class="slideshow">
+    <section class="slideshow__slide slide">
+        <figure class="slide__bg slideshow__item--visible">
+            <img src="images/a54428e0d7351b4ff364aa21242ee20a8853e323.png" />
+        </figure>
+        <!-- <figure class="slide__bg">
+            <img src="images/a54428e0d7351b4ff364aa21242ee20a8853e323.png" />
+        </figure> -->
+    <div class="slideshow__actions">
+        <button id="slideshow__button--prev" aria-label="Previous slide"></button>
+        <button id="slideshow__button--next" aria-label="Next slide">></button>
+    </div>    
+        <div class="slide__content">
+            <a href="#" class="cta">
+                <h2 class="cta__title">aaa</h2>
+                <p class="cta__description">aaa</p>
+                <span class="button button--primary">aaa</span>
+            </a>
+        </div>
+    </section>
+    <div class="flex items-center justify-center w-screen min-h-screen p-10">
+      <!-- Resice the preview panel to check the responsiveness -->
+    
+      <!-- Component Start -->
+      <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
+        <!-- Tile 1 -->
+        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+          <div class="h-40 bg-gray-400 rounded-lg" style="
+                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
+                ackground-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center;"></div>
+          <div class="flex flex-col items-start mt-4">
+            <h4 class="text-xl font-semibold">Heading</h4>
+            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
+            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
+          </div>
+        </div>
+        <!-- Tile 2 -->
+        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+          <div class="h-40 bg-gray-400 rounded-lg" style="
+                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
+                ackground-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center;"></div>
+          <div class="flex flex-col items-start mt-4">
+            <h4 class="text-xl font-semibold">Heading</h4>
+            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
+            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
+          </div>
+        </div>
+        <!-- Tile 3 -->
+        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
+          <div class="h-40 bg-gray-400 rounded-lg" style="
+                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
+                ackground-repeat: no-repeat;
+                background-attachment: cover;
+                background-position: center;"></div>
+          <div class="flex flex-col items-start mt-4">
+            <h4 class="text-xl font-semibold">Heading</h4>
+            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
+            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
+          </div>
+        </div>
+      </div>
+      <!-- Component End  -->
+    
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
