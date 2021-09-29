@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Mobile responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <title>Document</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Font Awesome Kit -->
-  <script src="https://kit.fontawesome.com/42b5f47478.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" type="text/css" href="./style.css" />
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 </head>
 <body>
@@ -25,7 +29,7 @@
           <nav class="md:flex space-x-10">
             <div class="relative">
               <a href="#">
-                <img class="h-8 w-auto sm:h-10" src="images/23183f673e61487f99f44529c9b32e26f19e7487.png" alt="">
+                <img class="h-8 w-auto sm:h-10" src="/images/23183f673e61487f99f44529c9b32e26f19e7487.png" alt="">
               </a>
             </div>
           </nav>
@@ -44,79 +48,100 @@
       </div>
     </div>
   </header>
+  <div class="swiper-container w-100">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      
+        <!-- Slides -->
+        <div class="swiper-slide px-30 py-6 flex items-center justify-center">
+          <img src="/images/a54428e0d7351b4ff364aa21242ee20a8853e323.png">
 
-  <div class="slideshow">
-    <section class="slideshow__slide slide">
-        <figure class="slide__bg slideshow__item--visible">
-            <img src="images/a54428e0d7351b4ff364aa21242ee20a8853e323.png" />
-        </figure>
-        <!-- <figure class="slide__bg">
-            <img src="images/a54428e0d7351b4ff364aa21242ee20a8853e323.png" />
-        </figure> -->
-    <div class="slideshow__actions">
-        <button id="slideshow__button--prev" aria-label="Previous slide"></button>
-        <button id="slideshow__button--next" aria-label="Next slide">></button>
-    </div>    
-        <div class="slide__content">
-            <a href="#" class="cta">
-                <h2 class="cta__title">aaa</h2>
-                <p class="cta__description">aaa</p>
-                <span class="button button--primary">aaa</span>
-            </a>
+<!--Button Learn More on Image-->
+  <div><button type="button" class="bg-yellow-400 text-black-800 rounded hover:bg-yellow-300 px-4 py-2 justify-center">Learn More
+  </button>
+</div>
+          
         </div>
-    </section>
-    <div class="flex items-center justify-center w-screen min-h-screen p-10">
-      <!-- Resice the preview panel to check the responsiveness -->
+        <div class="swiper-slide px-30 py-6 flex items-center justify-center"">
+          <img src="/images/a54428e0d7351b4ff364aa21242ee20a8853e323.png">
+        </div>
+    </div>
     
-      <!-- Component Start -->
-      <div class="grid xl:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2 max-w-6xl">
-        <!-- Tile 1 -->
-        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
-          <div class="h-40 bg-gray-400 rounded-lg" style="
-                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
-                ackground-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;"></div>
-          <div class="flex flex-col items-start mt-4">
-            <h4 class="text-xl font-semibold">Heading</h4>
-            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
-            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
-          </div>
-        </div>
-        <!-- Tile 2 -->
-        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
-          <div class="h-40 bg-gray-400 rounded-lg" style="
-                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
-                ackground-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;"></div>
-          <div class="flex flex-col items-start mt-4">
-            <h4 class="text-xl font-semibold">Heading</h4>
-            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
-            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
-          </div>
-        </div>
-        <!-- Tile 3 -->
-        <div class="flex flex-col bg-gray-200 rounded-lg p-4 m-2">
-          <div class="h-40 bg-gray-400 rounded-lg" style="
-                background-image: url(https://img.jakpost.net/c/2017/01/26/2017_01_26_20163_1485417604._large.jpg);
-                ackground-repeat: no-repeat;
-                background-attachment: cover;
-                background-position: center;"></div>
-          <div class="flex flex-col items-start mt-4">
-            <h4 class="text-xl font-semibold">Heading</h4>
-            <p class="text-sm">Some text about the thing that goes over a few lines.</p>
-            <a class="p-2 leading-none rounded font-medium mt-3 bg-gray-400 text-xs uppercase" href="#">Click Here</a>
-          </div>
-        </div>
-      </div>
-      <!-- Component End  -->
-    
+</div>
+</div>
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev w-15 h-15 text-xs rounded-full mx-10"></div>
+<div class="swiper-button-next w-15 h-15 text-xs rounded-full mx-10"></div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>   
+</div>
+</div>
+</div>
+<!---Second Container with Image Columns/Tiles-->
+<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+  <!--Card 1-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="/images/15aab96261989b4a39bc3ec2ea42abe0db6e3311.png" alt="Mountain">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">Campaign Title</div>
+      <p class="text-gray-700 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
     </div>
   </div>
-  <script src="js/main.js"></script>
+  <!--Card 2-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="/images/15aab96261989b4a39bc3ec2ea42abe0db6e3311.png" alt="River">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">Campaign Title</div>
+      <p class="text-gray-700 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
+    </div>
+  </div>
+
+  <!--Card 3-->
+  <div class="rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="/images/15aab96261989b4a39bc3ec2ea42abe0db6e3311.png" alt="Forest">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">Campaign Title</div>
+      <p class="text-gray-700 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+      </p>
+    </div>
+    <div class="px-6 pt-4 pb-2">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!--Adding the Green Bar -->
+<div class="p-2 bg-green-800 items-center text-white-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+  <span class="font-semibold mr-2 text-left flex-auto">Top News and Information</span>
+  </div>
+
+<!--The div element for the map -->
+    <div id="map"></div>
+
+    <!--Async JS-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChxjxdcbynr7hlhmCGB0lFOuYqYt2HGrc&callback=initMap&libraries=&v=weekly" async></script>
+    
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
-

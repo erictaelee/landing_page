@@ -1,41 +1,40 @@
-//Carousel 
-let slidePosition = 0;
-const slides = document.getElementsByClassName('slide__bg');
-const totalSlides = slides.length;
-
-
-document.getElementById('slideshow__button--next')
-  .addEventListener("click", function () {
-    moveToNextSlide();
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
   });
-
-document.getElementById('slideshow__button--prev')
-  .addEventListener("click", function () {
-    moveToPrevSlide();
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
   });
-
-function updateSlidePosition() {
-  for (let slide of slides) {
-    slide.classList.remove('slideshow__item--visible');
-    slide.classList.add('slideshow__item--hidden');
-  }
-  slides[slidePosition].classList.add('slideshow__item--visible')
 }
 
-function moveToNextSlide() {
-  if (slidePosition === totalSlides - 1) {
-    slidePosition = 0;
-  } else {
-    slidePosition++;
-  }
-  updateSlidePosition();
-}
+var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
 
-function moveToPrevSlide() {
-  if (slidePosition === 0) {
-    slidePosition = totalSlides - 1;
-  } else {
-    slidePosition--;
-  }
-  updateSlidePosition();
-}
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  //scrollbar: {
+  // el: '.swiper-scrollbar',
+  //},
+
+
+
+})
